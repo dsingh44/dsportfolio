@@ -2,3 +2,30 @@ html {
   height: 100%;
   width: 100%;
 }
+/* styles for background images and text */
+#background{
+  position:relative;
+  width: 100%;
+  height: 100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#background img{
+  position:absolute;
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+#nametext{
+  position:relative;
+  color:#1F2C33;
+  font-family: 'Brush Script MT', cursive;
+  font-size:120px;
+  margin-bottom:270px;
+  z-index:1;
+}
+#mountains{
+  z-index:2;
+}
