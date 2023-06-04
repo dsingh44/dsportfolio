@@ -2,6 +2,68 @@ html {
   height: 100%;
   width: 100%;
 }
+
+/*styles rules for the body of webpage */
+body{
+  background-color: white;
+
+  /* Adjust the padding and margins */
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0; 
+}
+
+.navbar{
+  position:relative;
+  z-index: 9999;
+}
+/* style rules for navbar container*/
+.navbar ul{
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  top:0;
+  width:100%;
+  margin-bottom: 200px;
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+}
+/* rules for individual list items in navigation bar*/
+.navbar ul li{
+  float:left;
+  margin:10px;
+}
+/* rules for links in navbar*/
+.navbar ul li a{
+  display:block;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  text-align: center;
+  padding:15px 25px;;
+  font-size:18px;
+  text-decoration:none;
+}
+/* rule for hovered link*/
+.navbar ul li a:hover{
+  font-weight: bold;
+}
+/*dark mode button*/
+#darkmode-button{
+  position: absolute;
+  margin-top:20px;
+}
+.dark-mode{
+  background-color: black;
+  color:white;
+}
+
 /* styles for background images and text */
 #background{
   position:relative;
@@ -22,7 +84,7 @@ html {
   position:relative;
   color:#1F2C33;
   font-family: 'Brush Script MT', cursive;
-  font-size:120px;
+  font-size:100px;
   margin-bottom:270px;
   z-index:1;
 }
