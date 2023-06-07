@@ -5,10 +5,10 @@ let nametext = document.getElementById("nametext");
 let darkmode = document.getElementById("darkmode-button");
 
 let rates={
-  bg: 0.05,
-  bird: 2.5,
-  mountains: 0.15,
-  text:14
+  bg: 0.1,
+  bird: 0.2,
+  mountains: 0.005,
+  text:0.6
 };
 
 const DarkMode = ()=>{
@@ -16,7 +16,6 @@ const DarkMode = ()=>{
 }
 //event listener
 darkmode.addEventListener("click",DarkMode);
-
 
 // This function handles scroll event
 const handlescroll = ()=> {

@@ -6,7 +6,6 @@ html {
 /*styles rules for the body of webpage */
 body{
   background-color: white;
-
   /* Adjust the padding and margins */
   padding-top: 0;
   padding-left: 0;
@@ -16,7 +15,10 @@ body{
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0; 
+  margin-bottom: 0;  
+}
+body, html {
+  overflow-x: hidden;
 }
 
 .navbar{
@@ -47,7 +49,7 @@ body{
   color:black;
   text-align: center;
   padding:15px 25px;;
-  font-size:18px;
+  font-size:20px;
   text-decoration:none;
 }
 /* rule for hovered link*/
@@ -90,4 +92,66 @@ body{
 }
 #mountains{
   z-index:2;
+}
+/*All sections titles styles*/
+.titles{
+  text-align:center;
+  margin-top:90px;
+  margin-bottom:20px;
+}
+
+/*about section styles*/
+#about-container{
+  display: flex;
+  flex-direction: row;
+}
+#portrait{
+  margin-left: 40px;
+  margin-right:65px;
+  margin-bottom: 200px;
+  width: 350px;
+  height: 400px;
+}
+#about-text{
+  
+}
+#about-text p{
+  color:#black;
+  font-size: 20px;
+  margin-top: 120px;
+  margin-left: 135px;
+  margin-right:100px;
+}
+
+/*Education section styles*/
+#degree-container{
+  display: flex;
+  flex-direction: row;
+}
+#csueb{
+  margin-left: 95px;
+  margin-right:50px;
+  margin-top:100px;
+  margin-bottom: 300px;
+  width: 300px;
+  height:150px;
+}
+#education-text{
+  margin-left:145px;
+  margin-right:40px;
+}
+
+/*Skills section styles*/
+#skills-container{
+  display:flex;
+  flex-direction: row;
+}
+#gif{
+  width:350px;
+  height:350px;
+  margin-left:95px;
+  margin-bottom:300px;
+}
+#skillstext{
+  margin-left:145px;
 }
