@@ -15,7 +15,7 @@ body{
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;  
+  margin-bottom: 60px;  
 }
 body, html {
   overflow-x: hidden;
@@ -98,6 +98,7 @@ body, html {
   text-align:center;
   margin-top:80px;
   margin-bottom:20px;
+  font-family: 'Allura', cursive;
 }
 /*All buttons styles*/
 button-container{
@@ -206,4 +207,25 @@ button:hover{
   padding:7px;
   border:1px solid #ccc;
   border-radius:25px;
+}
+
+/*styles for footer section*/
+footer{
+  position:relative;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color:#1F2C33;
+  color:white;
+  padding:30px 20px;
+  text-align:center;
+}
+#footer-content a i{
+  font-size:42px;
+  color:lightblue;
+  margin:0 10px;
+  transition:transform 0.3s ease-in-out;
+}
+#footer-content a i:hover{
+  transform:scale(1.3);
 }
