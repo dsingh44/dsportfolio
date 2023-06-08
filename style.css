@@ -59,7 +59,7 @@ body, html {
 /*dark mode button*/
 #darkmode-button{
   position: absolute;
-  margin-top:20px;
+  margin-top:5px;
 }
 .dark-mode{
   background-color: black;
@@ -96,8 +96,27 @@ body, html {
 /*All sections titles styles*/
 .titles{
   text-align:center;
-  margin-top:90px;
+  margin-top:80px;
   margin-bottom:20px;
+}
+/*All buttons styles*/
+button-container{
+  text-align:center;
+}
+button{
+  background-color:#1F2C33;
+  color:white;
+  font-size: 16px;
+  text-align:center;
+  border: 1px solid lightblue;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+button:hover{
+  background-color:lightblue;
+  color:black;
+  margin-top:5px;
 }
 
 /*about section styles*/
@@ -112,7 +131,6 @@ body, html {
   width: 350px;
   height: 400px;
 }
-
 #about-text p{
   font-size: 20px;
   margin-top: 120px;
@@ -153,6 +171,7 @@ body, html {
   margin-left:145px;
 }
 
+/*Project section styles*/
 #projects-container{
   display:flex;
   flex-direction: row;
@@ -161,4 +180,30 @@ body, html {
   width:200px;
   height:400px;
   margin-left: 150px; 
+  margin-bottom: 200px;
+}
+/*Contact section style*/
+#contact-container{
+  display:flex;
+  flex-direction: row;
+  margin-bottom:100px;
+}
+#contact-text p{
+  margin-top: 110px;
+  margin-left: 70px;
+}
+#form-container {
+  margin-left: 250px;
+}
+#contactform label {
+  margin-top: 75px;
+  display:block;
+}
+#contactform input, textarea{
+  width:100%;
+  margin-top: 5px;
+  margin-bottom:20px;
+  padding:7px;
+  border:1px solid #ccc;
+  border-radius:25px;
 }

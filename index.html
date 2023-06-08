@@ -36,7 +36,7 @@
 
   <!--- About section ------>
   <section id="about">
-    <h2 class="titles">👤About Me</h2>
+    <h2 class="titles">👤 About Me</h2>
     <div id = "about-container">
       <div id ="about-image">
         <img  src="img/sticker-portrait.jpg"/>
@@ -50,7 +50,7 @@
 
   <!---education section------->
   <section id ="education">
-    <h2 class="titles">🎓Education</h2>
+    <h2 class="titles">🎓 Education</h2>
     <div id ="education-container">
       <div id="education-image">
         <img src="img/csueb.png"/>
@@ -83,7 +83,7 @@
 
   <!---skills section----->
   <section id="skills">
-    <h2 class="titles">💻Skills</h2>
+    <h2 class="titles">💻 Skills</h2>
     <div id ="skills-container">
       <div id="skillsgif">
         <img src="img/programmer.gif" alt="Skills GIF"/>
@@ -107,14 +107,35 @@
 
   <!------projects------------>
   <section id="projects">
-    <h2 class="titles">💻Projects</h2>
+    <h2 class="titles">💻 Projects</h2>
     <div id="projects-container">
       <div id="iOSapp">
         <img  src="img/introapp.gif" alt="Intro iOS app" />
       </div>
     </div>
   </section>
-  
+
+  <!-------Contact section----->
+  <section id="contact">
+    <h2 class="titles">📝 Get In Touch</h2>
+    <div id="contact-container">
+      <div id="contact-text">
+        <p>Stay connected with me! Feel free to reach out using the form below 📝</p>
+      </div>
+      <div id="form-container">
+        <form id="contactform">
+          <label for = "name"> 👤 Name: </label>
+          <input type="text" id="name" placeholder="Name" required> <br>
+          <label for ="email"> 📧 Email: </label>
+          <input type ="text" id="email" placeholder="Email" required> <br>
+          <label for ="message"> 💬 Message: </label>
+          <textarea id="message" placeholder="Message" required> </textarea> <br>
+        </form>
+        <button id="send-button" >Send</button>
+      </div>
+    </div>
+  </section>
+      
   <script src="script.js"></script>
 </body>
 </html>
