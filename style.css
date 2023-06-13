@@ -6,6 +6,7 @@ html {
 /*styles rules for the body of webpage */
 body{
   background-color: white;
+  font-family: Verdana, sans-serif;
   /* Adjust the padding and margins */
   padding-top: 0;
   padding-left: 0;
@@ -86,19 +87,20 @@ body, html {
   position:relative;
   color:#1F2C33;
   font-family: 'Brush Script MT', cursive;
-  font-size:100px;
+  font-size:95px;
   margin-bottom:270px;
   z-index:1;
 }
 #mountains{
   z-index:2;
 }
-/*All sections titles styles*/
+/*All sections title styles*/
 .titles{
   text-align:center;
   margin-top:80px;
   margin-bottom:20px;
   font-family: 'Allura', cursive;
+  font-size:33px;
 }
 /*All buttons styles*/
 button-container{
@@ -107,7 +109,7 @@ button-container{
 button{
   background-color:#1F2C33;
   color:white;
-  font-size: 16px;
+  font-size: 20px;
   text-align:center;
   border: 1px solid lightblue;
   cursor: pointer;
@@ -128,13 +130,14 @@ button:hover{
 #about-image img {
   margin-left: 40px;
   margin-right:65px;
-  margin-bottom: 200px;
-  width: 350px;
-  height: 400px;
+  margin-bottom: 260px;
+  width: 340px;
+  height: 390px;
 }
 #about-text p{
-  font-size: 20px;
-  margin-top: 120px;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-top: 150px;
   margin-left: 135px;
   margin-right:100px;
 }
@@ -148,13 +151,21 @@ button:hover{
   margin-left: 95px;
   margin-right:50px;
   margin-top:100px;
-  margin-bottom: 300px;
   width: 300px;
   height:150px;
 }
 #education-text{
   margin-left:145px;
   margin-right:40px;
+  margin-bottom:80px;
+}
+#education-text h3{
+  font-size:23px;
+  margin-top:55px;
+}
+#education-text p, li {
+  line-height: 1.5;
+  font-size: 19px; 
 }
 
 /*Skills section styles*/
@@ -169,7 +180,13 @@ button:hover{
   margin-bottom:300px;
 }
 #skillstext{
+  margin-top:55px;
   margin-left:145px;
+}
+#skillstext li{
+  line-height: 1.5;
+  font-size:19px;
+  margin-right:100px; 
 }
 
 /*Project section styles*/
@@ -180,9 +197,11 @@ button:hover{
 #iOSapp img{
   width:200px;
   height:400px;
+  margin-top:55px;
   margin-left: 150px; 
   margin-bottom: 200px;
 }
+
 /*Contact section style*/
 #contact-container{
   display:flex;
@@ -192,21 +211,77 @@ button:hover{
 #contact-text p{
   margin-top: 110px;
   margin-left: 70px;
+  font-size:19px;
 }
 #form-container {
   margin-left: 250px;
 }
 #contactform label {
-  margin-top: 75px;
+  margin-top: 55px;
   display:block;
+  font-size:19px;
 }
 #contactform input, textarea{
+  font-size:18px;
   width:100%;
   margin-top: 5px;
   margin-bottom:20px;
   padding:7px;
   border:1px solid #ccc;
   border-radius:25px;
+}
+.error{
+  border-style: solid;
+  border-width:2px;
+  border-color: red;
+  background:lightcoral;
+}
+
+/* thanks modal styles*/
+#thanks-modal{
+  display:none;
+  position:fixed;
+  z-index: 2;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.4);
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+}
+#modal-content{
+  background-color:white;
+  color:black;
+  text-align:center;
+  font-size:3rem;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  align-items:center;
+  border: 3px solid green;
+}
+#thanks-modal-content{
+  width:20rem;
+}
+#modaltext-container{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+}
+
+/*animation styles*/
+.revealable{
+  position:relative;
+  transform:translateY(150px);
+  opacity:0;
+  transition:all 2s ease;
+}
+.revealable.active{
+  transform:translateY(0);
+  opacity:1;
 }
 
 /*styles for footer section*/
