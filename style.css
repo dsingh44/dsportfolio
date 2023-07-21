@@ -192,16 +192,65 @@ button:hover{
 /*Project section styles*/
 #projects-container{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-#iOSapp img{
-  width:200px;
-  height:400px;
-  margin-top:55px;
-  margin-left: 150px; 
-  margin-bottom: 200px;
+#row1, #row2{
+  display:flex;
+  flex-direction:row;
+}
+/*Styles for image container with overlays*/
+.image-container{
+  position: relative;
+  overflow: hidden;
+}
+/*Overlay for images on hover*/
+.image-overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  color:white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/*show the overlay when hover over image container*/
+.image-container:hover .image-overlay{
+  opacity: 1;
+}
+/*Apply a blur effect on image when hovering over container*/
+.image-container:hover img{
+  filter:blur(5px);
 }
 
+#iOSapp img,#Geoquizapp img {
+  width:250px;
+  height:450px;
+}
+#GUI img{
+  width:500px;
+  height:220px;
+}
+#advocacyproject img{
+  width: 460px;
+  height:320px;
+}
+#iOSapp, #Geoquizapp {
+  margin-top:100px;
+  margin-left:300px;
+}
+#GUI {
+  margin-top:100px;
+  margin-left:200px;
+}
+#advocacyproject {
+  margin-top:100px;
+  margin-left:50px;
+}
+ 
 /*Contact section style*/
 #contact-container{
   display:flex;
